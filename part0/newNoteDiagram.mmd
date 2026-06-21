@@ -7,10 +7,18 @@ sequenceDiagram
   Server -->> Browser: 302 /notes
   deactivate Server
   Browser ->> Server: GET /notes
+  activate Server
   Server -->> Browser: HTML document
+  deactivate Server
   Browser ->> Server: GET /main.css
+  activate Server
   Server -->> Browser: /main.css
+  deactivate Server
   Browser ->> Server: GET /main.js
+  activate Server
   Server -->> Browser: main.js
+  deactivate Server
   Browser ->> Server: GET /data.json
+  activate Server
   Server -->> Browser: data.json
+  deactivate Server
