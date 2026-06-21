@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant Browser
+    participant Server
+
+    Browser->>Server: GET /spa
+    activate Server
+    Server-->>Browser: HTML document
+    deactivate Server
+    Browser->>Server: GET /main.css
+    activate Server
+    Server-->>Browser: main.css
+    deactivate Server
+    Browser->>Server: GET /app.js
+    activate Server
+    Server-->>Browser: app.js
+    deactivate Server
+    Browser->>Server: GET /data.json
+    activate Server
+    Server-->>Browser: data.json
+    deactivate Server
