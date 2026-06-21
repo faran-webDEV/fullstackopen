@@ -10,9 +10,9 @@ sequenceDiagram
     activate Server
     Server-->>Browser: main.css
     deactivate Server
-    Browser->>Server: GET /app.js
+    Browser->>Server: GET /spa.js
     activate Server
-    Server-->>Browser: app.js
+    Server-->>Browser: spa.js
     deactivate Server
     Browser->>Server: GET /data.json
     activate Server
