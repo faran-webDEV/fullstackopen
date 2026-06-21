@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant Browser
+  participant Server 
+  Browser ->> Server: POST /new_note
+  Server -->> Browser: 302 /notes
+  Browser ->> Server: GET /notes
+  Server -->> Browser: HTML document
+  Browser ->> Server: GET /main.css
+  Server -->> Browser: /main.css
+  Browser ->> Server: GET /main.js
+  Server -->> Browser: main.js
+  Browser ->> Server: GET /data.json
+  Server -->> Browser: data.json
