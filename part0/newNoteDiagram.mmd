@@ -1,7 +1,7 @@
 sequenceDiagram
   participant Browser
   participant Server 
-  Note: Previous steps of first time page loading were skipped.
+  Note right of: Previous steps of first time page loading were skipped.
   Browser ->> Server: POST /new_note
   activate Server
   Server -->> Browser: 302 /notes
