@@ -1,8 +1,6 @@
 sequenceDiagram
-
 participant Browser
 participant Server 
-
 Browser ->> Server: POST /new_note
 Server -->> Browser: 302 /notes
 Browser ->> Server: GET /notes
